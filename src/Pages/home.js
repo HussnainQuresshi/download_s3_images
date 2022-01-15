@@ -58,7 +58,7 @@ export default function Home() {
     const data = new FormData(event.currentTarget);
     setImageNumber(data.get("file_number"));
     fetch(
-      `http://corsbypass.herokuapp.com/https://pixelbandspfpbucket.s3.us-east-2.amazonaws.com/assets/${data.get(
+      `https://corsbypass.herokuapp.com/https://pixelbandspfpbucket.s3.us-east-2.amazonaws.com/assets/${data.get(
         "file_number"
       )}.png`
     )
