@@ -33,7 +33,9 @@ function Copyright(props) {
     >
       {"Copyright © "}
       <Link color="inherit" href="#">
-        Profile-Pic-Generator
+        Profile-Pic-Generator (kindly send the money through wiseTransfer if you
+        have an account its free of cost other wise its 1$max on fiver they will
+        charge you 2.5$ and they will charge me 20% )
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
