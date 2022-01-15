@@ -42,6 +42,10 @@ function Copyright(props) {
         Whatsapp:+923118423854
         <br />
         WiseAccountEmail: hussnainhashmi77133@gmail.com (Hussnain)
+        <br />
+        <br />
+        <br />
+        Dont Talk About wise transfer and other stuff on fiver :D , Thanks
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
