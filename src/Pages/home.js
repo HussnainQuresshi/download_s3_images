@@ -33,18 +33,6 @@ function Copyright(props) {
       {"Copyright © "}
       <Link color="inherit" href="#">
         Profile-Pic-Generator
-        <br />
-        kindly send the money through wiseTransfer if you have an account its
-        free of cost other wise its 1$max on fiver they will charge you 2.5$ and
-        they will charge me 20%.
-        <br />
-        Whatsapp:+923118423854
-        <br />
-        WiseAccountEmail: hussnainhashmi77133@gmail.com (Hussnain)
-        <br />
-        <br />
-        <br />
-        Dont Talk About wise transfer and other stuff on fiver :D , Thanks
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
