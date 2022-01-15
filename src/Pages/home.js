@@ -17,7 +17,6 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
@@ -100,9 +99,9 @@ export default function Home() {
         component="main"
         maxWidth="xs"
         sx={{
-          border: "2px solid #ccc",
+          border: "2px solid #fff",
           borderRadius: "4px",
-          marginTop: "10%",
+          marginTop: "5%",
         }}
       >
         <CssBaseline />
