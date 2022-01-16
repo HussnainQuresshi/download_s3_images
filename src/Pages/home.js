@@ -5,11 +5,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/VerifiedUser";
+import LockOutlinedIcon from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/pfp2.png";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Modal from "@mui/material/Modal";
+import "./home.css";
 
 const style = {
   position: "absolute",
@@ -30,12 +31,8 @@ function Copyright(props) {
       align="center"
       {...props}
     >
-      {"Copyright © "}
-      <Link color="inherit" href="#">
-        Profile-Pic-Generator
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
+      {""}
+      
     </Typography>
   );
 }
@@ -85,27 +82,29 @@ export default function Home() {
     <ThemeProvider theme={theme}>
       <Container
         component="main"
-        maxWidth="xs"
+        maxWidth="md"
         sx={{
-          border: "2px solid #fff",
+          
           borderRadius: "4px",
-          marginTop: "5%",
+          marginTop: "10%",
         }}
       >
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 2,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Profile Pic Generator
+        
+        <div>
+          <img src={LockOutlinedIcon} height="200" width="200" className="pfpImage" />
+          </div>
+          
+          <Typography className="mainText">
+            Profile Picture Generator
           </Typography>
           <Box
             component="form"
@@ -113,17 +112,19 @@ export default function Home() {
             noValidate
             sx={{ mt: 1 }}
           >
-            <TextField
-              margin="normal"
+
+           <TextField 
+              margin="none"
               required
               fullWidth
               id="file_number"
-              label="File Name"
+              label="File Number"
               name="file_number"
               autoComplete="file_number"
               autoFocus
             />
-            <Button
+            
+            <Button className="button"
               type="submit"
               fullWidth
               variant="contained"
@@ -135,18 +136,7 @@ export default function Home() {
           </Box>
         </Box>
         <Box
-          component="footer"
-          sx={{
-            py: 3,
-            px: 2,
-            mb: 0,
-            bottom: 0,
-            bottom: "0px",
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[200]
-                : theme.palette.grey[800],
-          }}
+          
         >
           <Container maxWidth="sm">
             <Copyright />
@@ -163,7 +153,7 @@ export default function Home() {
           <img
             src={`https://pixelbandspfpbucket.s3.us-east-2.amazonaws.com/assets/${imageNumber}.png`}
           />
-          <Button
+          <Button className="button"
             type="download"
             fullWidth
             variant="contained"
@@ -171,7 +161,7 @@ export default function Home() {
             sx={{ mt: 3, mb: 2 }}
             onClick={onDownload}
           >
-            Download
+            Download PFP
           </Button>
         </Box>
       </Modal>

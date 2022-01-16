@@ -1,0 +1,61 @@
+.pfpImage {
+    border-radius: 50% !important;
+    border: 5px solid #fdfdfe;
+  }
+
+.mainText{
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 900 !important;
+    font-size: 55px !important;
+    color: #ffffff;
+}
+/*
+.button{
+    color: rgb(233, 86, 29);
+    background: #ffa238 !important;
+    width: 60% !important;
+}
+
+.mainCont{
+    width:"400" !important;
+}
+
+
+
+input[type=text] {
+    color: #fdfdfe;
+    width: 60%;
+    padding: 15px 30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid rgb(255, 255, 255);
+    outline: none;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+*/
+  
+
+.explainText{
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 20px !important;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+
+  
+input:focus {
+    background-color: none;
+  }
+div.a {
+    width: 60%;
+   align-content: center;
+   text-align: center;
+   margin-left: auto;
+    margin-right: auto;
+  }
+
+  
