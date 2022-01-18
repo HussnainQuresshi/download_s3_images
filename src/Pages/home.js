@@ -5,7 +5,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import LockOutlinedIcon from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/pfp2.png";
+import LockOutlinedIcon from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/pfp.gif";
+import PBLogo from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/PixBandLogo.png";
+import PBMNoteLogo from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/PBMusicLogo.png";
+import TwitterIcon from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/twitterLogo.png";
+import DiscordIcon from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/discLogo.png";
+import websiteIcon from "/Users/owen/Desktop/pfpGeneratorSite/download_s3_images/src/assets/websiteicon.png";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -19,21 +24,35 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 400,
   border: "2px solid #000",
-  boxShadow: 24,
+  background: "#2d2c2e",
+  boxShadow: 50,
   p: 4,
+  "border-radius":"25px",
 };
 
-function Copyright(props) {
+function TopRight(props) {
   return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {""}
-      
-    </Typography>
+    <div class="container">
+    <div class="top-left">
+    <div>
+          <img src={PBLogo} height="90px" />
+          </div>
+    </div>
+    <div class="top-right">
+    <div class="child2">WEBSITE</div>
+    <div class="child2">STUDIO</div>
+    </div>
+    <div class="bottom-left">
+    <div>
+          <img src={PBMNoteLogo} height="90px" />
+          </div>
+    </div>
+    <div class="bottom-right">
+    <div class="child"> <img src={TwitterIcon} height="30px" /></div>
+    <div class="child"><img src={DiscordIcon} height="30px" /></div>
+    <div class="child"><img src={websiteIcon} height="30px" /></div>
+    </div>
+</div>
   );
 }
 
@@ -113,17 +132,14 @@ export default function Home() {
             sx={{ mt: 1 }}
           >
 
-           <TextField 
-              margin="none"
-              required
-              fullWidth
-              id="file_number"
-              label="File Number"
-              name="file_number"
-              autoComplete="file_number"
-              autoFocus
-            />
+            <div class="a">
+            <p className="explainText">
+            Find your PixelBands NFT number and place it into
+            the search box below to generate your custom PFP!
+            </p>
+            <input type="text" name="file_number" id="file_number" />
             
+
             <Button className="button"
               type="submit"
               fullWidth
@@ -131,15 +147,16 @@ export default function Home() {
               disabled={loading}
               sx={{ mt: 3, mb: 2 }}
             >
-              {loading ? "searching..." : "Search"}
+              {loading ? "Generating..." : "Generate your PFP"}
             </Button>
+            </div>
           </Box>
         </Box>
         <Box
           
         >
           <Container maxWidth="sm">
-            <Copyright />
+            <TopRight />
           </Container>
         </Box>
       </Container>
@@ -150,7 +167,9 @@ export default function Home() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <img
+          <div class="b">
+            <p className="explainText2">Pixel Bands #{imageNumber}</p>
+          <img className="finalImage"
             src={`https://pixelbandspfpbucket.s3.us-east-2.amazonaws.com/assets/${imageNumber}.png`}
           />
           <Button className="button"
@@ -163,6 +182,7 @@ export default function Home() {
           >
             Download PFP
           </Button>
+          </div>
         </Box>
       </Modal>
     </ThemeProvider>

@@ -1,6 +1,6 @@
 .pfpImage {
     border-radius: 50% !important;
-    border: 5px solid #fdfdfe;
+    border: 6px solid #fdfdfe;
   }
 
 .mainText{
@@ -9,7 +9,7 @@
     font-size: 55px !important;
     color: #ffffff;
 }
-/*
+
 .button{
     color: rgb(233, 86, 29);
     background: #ffa238 !important;
@@ -34,8 +34,10 @@ input[type=text] {
     margin-left: auto;
     margin-right: auto;
   }
-*/
-  
+
+  input[type=text]:focus {
+    border: 3px solid #ffa238;
+  }
 
 .explainText{
     font-family: "Dela Gothic One", sans-serif;
@@ -45,11 +47,16 @@ input[type=text] {
 
 }
 
+.explainText2{
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 25px !important;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 900;
 
-  
-input:focus {
-    background-color: none;
-  }
+
+}
+
 div.a {
     width: 60%;
    align-content: center;
@@ -58,4 +65,74 @@ div.a {
     margin-right: auto;
   }
 
-  
+  div.b {
+
+   align-content: center;
+   text-align: center;
+   margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+
+
+.top-left {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 20px !important;
+    color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 20px; 
+}
+
+.top-right {
+
+    width: 15%;
+    height: 90px;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 20px !important;
+    color: #ffffff;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.bottom-left {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 20px !important;
+    color: #ffffff;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.bottom-right {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 20px !important;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 15%;
+    height: 90px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.child {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    
+}
+.child2 {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    
+}
+.finalImage{
+    background-color: #fff;
+    padding: 5px;
+}
